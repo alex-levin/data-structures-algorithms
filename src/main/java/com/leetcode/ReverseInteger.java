@@ -1,3 +1,5 @@
+package com.leetcode;
+
 /**
  * Given a 32-bit signed integer, reverse digits of an integer.
  * 
@@ -21,7 +23,7 @@
  */
 class ReverseInteger {
     
-    public int reverse(int x) {
+    public static int reverse(int x) {
         int y = x > 0 ? x : -x;
         long reversed = 0;
         while(y > 0) {
@@ -32,5 +34,9 @@ class ReverseInteger {
             return 0;
         }
         return x > 0 ? (int) reversed : - (int)reversed;
+    }
+    
+    public static void main(String[] args) {
+    	System.out.println(reverse(123));
     }
 }
