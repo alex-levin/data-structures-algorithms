@@ -1,5 +1,4 @@
-https://codeforces.com/submissions/DylanSmith
-
+```
 import java.util.*;
 public class ACookieForYou {
     public static void main(String[] args) {
@@ -15,5 +14,4 @@ public class Grid00100 {
             int n = in.nextInt(), k = in.nextInt();
             boolean[][] mat = new boolean[n][n];
             
-            
-https://codeforces.com/contest/1371/problem/A           
+```
