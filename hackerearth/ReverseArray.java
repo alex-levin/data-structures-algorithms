@@ -1,0 +1,61 @@
+/*
+https://www.hackerearth.com/practice/data-structures/arrays/1-d/tutorial/
+Input:
+5
+4
+12
+7
+15
+9
+
+Output:
+9
+15
+7
+12
+4
+*/
+
+/* IMPORTANT: Multiple classes and nested static classes are supported */
+
+/*
+ * uncomment this if you want to read input.
+//imports for BufferedReader
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+*/
+
+//import for Scanner and other utility classes
+import java.util.*;
+
+
+class ReverseArray {
+    public static void main(String args[] ) throws Exception {
+        /* Sample code to perform I/O:
+         * Use either of these methods for input
+
+        //BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String name = br.readLine();                // Reading input from STDIN
+        System.out.println("Hi, " + name + ".");    // Writing output to STDOUT
+        */
+        //Scanner
+        Scanner s = new Scanner(System.in);
+
+        // Write your code here
+        int n = s.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++) {
+            arr[i] = s.nextInt();
+        }
+        for(int i = 0; i < n / 2; i++) {
+            int temp = arr[i];
+            arr[i] = arr[n - 1 - i];
+            arr[n - 1 - i] = temp;
+        }
+        for(int i = 0; i < n; i++) {
+            System.out.println(arr[i]);
+        }
+    }
+}
+
